@@ -1,7 +1,7 @@
 
 public class LegoMosaics {
 
-	static int columns/* = 1000 */;
+	static int columns = 1000 ;
 	static int[] block = new int[] { 1, 2, 3, 4, 6, 8, 10, 12, 16 };
 
 	int[] repetitions;
@@ -9,9 +9,9 @@ public class LegoMosaics {
 	int biggestSeq;
 
 	public LegoMosaics(int columns) {
-		this.columns = columns;
 		this.repetitions = new int[columns + 1];
 		this.combinations = new int[columns + 1];
+		this.columns = columns;
 	}
 
 	void addLine(String spots) {
